@@ -1,6 +1,8 @@
+require('dotenv').config()
+
 module.exports = {
-    HOST: "localhost",
-    USER: "root",
-    PASSWORD : "",
-    DB : "todo_db"
+    HOST: process.env.MYSQL_HOST,
+    USER: process.env.MYSQL_USER,
+    PASSWORD : process.env.MYSQL_PASSWORD,
+    DB : process.env.MYSQL_DBNAME
 };
